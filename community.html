@@ -1,0 +1,64 @@
+<!doctype html>
+<html lang="de">
+<head>
+<title>meine erste Seite</title>
+<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no"> 
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta charset="utf-8">
+<link rel="stylesheet" type="text/css" href="css/style.css" media="screen" />
+<script src="https://code.jquery.com/jquery-3.3.1.min.js"></script>
+<script>
+$(document).ready(function(){
+    $(window).scroll(function(){
+        if($(window).scrollTop() > 0) {
+            $('#mainNav').addClass('sticky')
+        }
+        else {
+        $('#mainNav').removeClass('sticky')
+        }
+    });
+});
+</script>
+</head>
+<body>
+<header>
+        <input type="checkbox" id="navchecker">
+        <nav class="stroke" id="mainNav">
+            <h1><a href="index.html">Dev-Systems</a></h1>
+            <p><label for="navchecker"></label></p>
+        <ul>
+            <li><a class="underline" href="index.html">About us</a></li>
+            <li><a class="underline" href="we-are-hiring.html">We Are Hiring</a></li>
+            <li><a class="underline" href="benefits.html">Benefits</a></li>
+            <li><a class="underline" href="gallery.html">Gallery</a></li>
+            <li><a class="underline" href="community.html">Community</a></li>
+        </ul>
+        </nav>
+</header>
+<main>
+    <article id="community">
+        <section id="background-community">
+        </section>
+        <h2>Community</h2>
+        <p>We care about our community. We want to make a positivie change. Here are some of the examples of our work.</p>
+        <h3>"Trash-Formation" in Munich</h3>
+        <p>Last year, youth learned that more than 20 tons of waste materials — most of which could have been recycled — were being thrown out annually. To combat this issue, the Youth Council created a multipart program that aimed to decrease the risk of environmental and health issues. It included "That's My Districy" a competition among the 15 districts for the title of the cleanest community through use of proper solid-waste management and recycling. The project included a second competition, called "Eco-ration," which asked youth to submit art made from recycled goods.</p>
+        <p>Many district has vowed to continue the competitions yearly to meet the long-term project goals of improving environmental processes.</p>
+        <h3>Community care kits</h3>
+        <p>Disheartened by the number of homeless people on the streets of Munich, 16-year-old Larissa wanted to help. After all. "I know what it means to receive help from others and the difference it can make," Larissa shares. "When I am driving around downtown Munich with my mom, I always notice homeless people on the corner. I often wonder how I can make a difference and show them that I care."</p>
+        <p>So Larissa spearheaded a campaign to create care kits for them. With money from the Dev-dydtems Fund, teens crafted kits of hand sanitizer, washcloths, soap, toothpaste, toothbrushes, deodorant, disinfectant wipes and snacks.</p>
+        <h3>Family and school gardens</h3>
+        <p>Dev-Systems launched its gardens project in 2013. Based on its success, they decided to continue funding the gardens. Last year, the teens harvested more than 200 pounds of tomatoes, plus beets, carrots, onions and other vegetables. They sold the produce to local residents and donated to CI's nutrition program. Youth continue to invest in the gardens, ensuring their longevity.</p>
+        <p>"This project made me realize that everything is possible — that to reach a goal, it is necessary to organize yourself and distribute your time evenly," says Edwin, a recent program graduate. "Even though I was in my last year of school, I still had time to tend to the garden, attend the trainings and harvest the vegetables. I learned to respect the abilities of my other project colleagues."</p>
+        <p>If you want to understand community work better, please download this:</p>
+    </article>
+</main>
+<footer>
+<p>Copyright © 2000-2020 <a href="index.html">Dev-Systems</a>, <a href="#">Arabellastraße 32</a></p>
+<ul>
+    <li><a href="data-policy.html">Data Policy</a></li>
+    <li><a href="imprint.html">Imprint</a></li>
+</ul>
+</footer>
+</body>
+</html>
